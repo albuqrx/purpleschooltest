@@ -6,14 +6,11 @@ function sortArray(array) {
     let sortArray = [];
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array.length; j++) {
-            if (array[i] < array[j]) {
-                continue;
+            if (array[i] > array[j]) {
+                let newindex = array[j];
+                array[j] = array[i];
+                array[i] = newindex;
             }
-
-            let newindex = array[j];
-            array[j] = array[i];
-            array[i] = newindex;
-
         }
     }
 
