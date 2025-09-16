@@ -18,7 +18,7 @@ function currencyСonversion(userSum, userCurrency, targetCurrency) {
 
     if (arrayConversion.hasOwnProperty(property)) {
         console.log(arrayConversion[property]);
-        return userSum;
+        return userSum * arrayConversion[property];
     } 
     
     if (userCurrency === targetCurrency) return userSum;
