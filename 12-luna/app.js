@@ -8,7 +8,7 @@ function luna(str) {
     console.log(cleanString);
     let sum = 0;
 
-    for (let i = cleanString.length - 1; i > 0; i -= 2) {
+    for (let i = cleanString.length - 2; i > 0; i -= 2) {
         console.log(cleanString[i]);
         cleanString[i] *= 2;
         
